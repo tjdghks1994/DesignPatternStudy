@@ -11,13 +11,16 @@ public class PrototypeMain {
         manager.register("warning box", mbox);
         manager.register("slash box", sbox);
 
-        Product p1 = manager.create("strong message");
+//        Product p1 = manager.create("strong message");
+        ProductClass p1 = manager.create("strong message");
         p1.use("Hello, World");
 
-        Product p2 = manager.create("warning box");
+//        Product p2 = manager.create("warning box");
+        ProductClass p2 = manager.create("warning box");
         p2.use("Hello, World");
 
-        Product p3 = manager.create("slash box");
+//        Product p3 = manager.create("slash box");
+        ProductClass p3 = manager.create("slash box");
         p3.use("Hello, World");
     }
 }
