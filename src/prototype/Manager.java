@@ -4,14 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Manager {
-    private Map<String, Product> showcase = new HashMap<>();
+    private Map<String, ProductClass> showcase = new HashMap<>();
 
-    public void register(String name, Product product) {
+    public void register(String name, ProductClass product) {
         showcase.put(name, product);
     }
 
-    public Product create(String prototypeName) {
-        Product p = showcase.get(prototypeName);
-        return p.createCopy();
+    public ProductClass create(String prototypeName) {
+        ProductClass p = showcase.get(prototypeName);
+        return p.createCopy(p);
     }
 }
