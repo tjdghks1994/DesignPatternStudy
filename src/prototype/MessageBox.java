@@ -1,6 +1,7 @@
 package prototype;
 
-public class MessageBox implements Product {
+//public class MessageBox implements Product {
+public class MessageBox extends ProductClass {
 
     private char decochar;
 
@@ -22,14 +23,14 @@ public class MessageBox implements Product {
         System.out.println();
     }
 
-    @Override
-    public Product createCopy() {
-        Product p = null;
-        try {
-            p = (Product) clone();
-        } catch (CloneNotSupportedException e) {
-            throw new RuntimeException(e);
-        }
-        return p;
-    }
+//    @Override
+//    public Product createCopy() {
+//        Product p = null;
+//        try {
+//            p = (Product) clone();
+//        } catch (CloneNotSupportedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        return p;
+//    }
 }

@@ -1,6 +1,7 @@
 package prototype;
 
-public class UnderlinePen implements Product {
+//public class UnderlinePen implements Product {
+public class UnderlinePen extends ProductClass {
 
     private char ulchar;
 
@@ -18,14 +19,14 @@ public class UnderlinePen implements Product {
         System.out.println();
     }
 
-    @Override
-    public Product createCopy() {
-        Product p = null;
-        try {
-            p = (Product) clone();
-        } catch (CloneNotSupportedException e) {
-            throw new RuntimeException(e);
-        }
-        return p;
-    }
+//    @Override
+//    public Product createCopy() {
+//        Product p = null;
+//        try {
+//            p = (Product) clone();
+//        } catch (CloneNotSupportedException e) {
+//            throw new RuntimeException(e);
+//        }
+//        return p;
+//    }
 }
